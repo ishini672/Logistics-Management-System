@@ -36,17 +36,37 @@ void performanceReport();
 
 
 
-
-
-
-
-
-
-
-
-
 int main()
 {
 
+    int choice;
+    for (int i = 0; i < MAX_CITIES; i++)
+        for (int j = 0; j < MAX_CITIES; j++)
+            distance[i][j] = 0;
+
+    while (1) {
+        menu();
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        if (choice == 0) break;
+        else if (choice == 1)
+            addCity();
+        else if (choice == 2)
+            showCities();
+        else if (choice == 3)
+            enterDistance();
+        else if (choice == 4)
+            showDistanceMatrix();
+        else if (choice == 5)
+            newDelivery();
+        else if (choice == 6)
+            performanceReport();
+        else printf("Invalid choice!\n");
+    }
+
+    printf("\nThank you for using the Delivery Cost Estimation System!\n");
+
     return 0;
+
 }
