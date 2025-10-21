@@ -70,3 +70,16 @@ int main()
     return 0;
 
 }
+
+void menu() {
+    printf("\n===== DELIVERY COST ESTIMATION SYSTEM =====\n");
+    printf("1. Add City\n");
+    printf("2. Show Cities\n");
+    printf("3. Enter/Edit Distances\n");
+    printf("4. Show Distance Matrix\n");
+    printf("5. New Delivery Request\n");
+    printf("6. Performance Report\n");
+    printf("7. Exit\n");
+}
+
+
