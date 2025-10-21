@@ -26,6 +26,18 @@ double profit[MAX_DELIVERIES], customerCharge[MAX_DELIVERIES];
 double timeHrs[MAX_DELIVERIES];
 int deliveryCount = 0;
 
+void menu();
+void addCity();
+void showCities();
+void enterDistance();
+void showDistanceMatrix();
+void newDelivery();
+void performanceReport();
+
+
+
+
+
 
 
 
