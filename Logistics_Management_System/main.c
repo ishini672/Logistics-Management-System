@@ -224,6 +224,21 @@ void newDelivery() {
     timeHrs[deliveryCount] = tHrs;
     deliveryCount++;
 
+    printf("\n========= DELIVERY ESTIMATION =========\n");
+    printf("From: %s\nTo: %s\n", cityNames[from - 1], cityNames[to - 1]);
+    printf("Vehicle: %s\nWeight: %.2f kg\nDistance: %.2f km\n", vehicleNames[vType - 1], w, D);
+    printf("---------------------------------------\n");
+    printf("Delivery Cost: %.2f LKR\n", bCost);
+    printf("Fuel Used: %.2f L\n", fUsed);
+    printf("Fuel Cost: %.2f LKR\n", fCost);
+    printf("Operational Cost: %.2f LKR\n", tCost);
+    printf("Profit: %.2f LKR\n", prof);
+    printf("Customer Charge: %.2f LKR\n", charge);
+    printf("Estimated Time: %.2f hours\n", tHrs);
+    printf("=======================================\n");
+}
+
+
 
 
 
