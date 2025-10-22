@@ -197,5 +197,19 @@ void newDelivery() {
 
 
 
+    double R = ratePerKm[vType - 1];
+    double S = avgSpeed[vType - 1];
+    double E = fuelEff[vType - 1];
+
+    double bCost = D * R * (1 + w / 10000.0);
+    double fUsed = D / E;
+    double fCost = fUsed * fuelPrice;
+    double tCost = bCost + fCost;
+    double prof = tCost * 0.25;
+    double charge = tCost + prof;
+    double tHrs = D / S;
+
+
+
 
 
