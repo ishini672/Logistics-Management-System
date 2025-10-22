@@ -108,6 +108,35 @@ void showCities() {
 }
 
 
+void enterDistance() {
+    if (cityCount<2) {
+        printf("Add at least two cities first.\n");
+        return;
+    }
+
+    showCities();
+
+    int d;
+    printf("Enter first city number: ");
+    scanf("%d", &a);
+    printf("Enter second city number: ");
+    scanf("%d", &b);
+
+    if (a < 1 || b < 1 || a > cityCount || b > cityCount || a == b) {
+        printf("Invalid city numbers!\n");
+        return;
+    }
+
+    printf("Enter distance between %s and %s (km): ", cityNames[a - 1], cityNames[b - 1]);
+    scanf("%d", &d);
+
+    distance[a - 1][b - 1] = d;
+    distance[b - 1][a - 1] = d;
+
+    printf("Distance updated successfully!\n");
+}
+
+
 
 
 
