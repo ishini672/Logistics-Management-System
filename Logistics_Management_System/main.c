@@ -210,6 +210,23 @@ void newDelivery() {
     double tHrs = D / S;
 
 
+    fromCity[deliveryCount] = from - 1;
+    toCity[deliveryCount] = to - 1;
+    vehicleType[deliveryCount] = vType;
+    dist[deliveryCount] = D;
+    weight[deliveryCount] = w;
+    baseCost[deliveryCount] = bCost;
+    fuelUsed[deliveryCount] = fUsed;
+    fuelCost[deliveryCount] = fCost;
+    totalCost[deliveryCount] = tCost;
+    profit[deliveryCount] = prof;
+    customerCharge[deliveryCount] = charge;
+    timeHrs[deliveryCount] = tHrs;
+    deliveryCount++;
+
+
+
+
 
 
 
