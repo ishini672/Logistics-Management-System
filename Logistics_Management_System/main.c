@@ -96,5 +96,18 @@ void addCity() {
 }
 
 
+void showCities() {
+    if (cityCount==0) {
+        printf("No cities added yet.\n");
+        return;
+    }
+
+    printf("\nList of Cities: \n");
+    for (int i = 0; i < cityCount; i++)
+        printf("%d. %s\n", i + 1, cityNames[i]);
+}
+
+
+
 
 
