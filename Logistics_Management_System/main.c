@@ -82,4 +82,19 @@ void menu() {
     printf("7. Exit\n");
 }
 
+void addCity() {
+    while (cityCount>=MAX_CITIES) {
+        printf("City limit reached.\n");
+        return;
+    }
+
+    printf("Enter city name: ");
+    scanf("%s", cityNames[cityCount]);
+    cityCount++;
+
+    printf("City added successfully!\n");
+}
+
+
+
 
