@@ -139,5 +139,25 @@ void enterDistance() {
 
 
 
+void showDistanceMatrix() {
+    if (cityCount == 0) {
+        printf("No cities added yet.\n");
+        return;
+    }
+
+    printf("\n Distance Matrix(km):\n        ");
+    for (int i = 0; i < cityCount; i++)
+        printf("%-10s", cityNames[i]);
+    printf("\n");
+
+    for (int i = 0; i < cityCount; i++) {
+        printf("%-8s", cityNames[i]);
+        for (int j = 0; j < cityCount; j++)
+            printf("%-10d ", distance[i][j]);
+        printf("\n");
+    }
+}
+
+
 
 
