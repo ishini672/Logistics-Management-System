@@ -159,5 +159,43 @@ void showDistanceMatrix() {
 }
 
 
+void newDelivery() {
+    if (cityCount < 2) {
+        printf("Add more cities first.\n");
+        return;
+    }
+    if (deliveryCount >= MAX_DELIVERIES) {
+        printf("Delivery record full!\n");
+        return;
+    }
+
+    showCities();
+
+    int from, to, vType;
+    double w;
+
+    printf("Enter source city number: ");
+    scanf("%d", &from);
+    printf("Enter destination city number: ");
+    scanf("%d", &to);
+
+    if (from < 1 || to < 1 || from > cityCount || to > cityCount || from == to) {
+        printf("Invalid city numbers!\n");
+        return;
+    }
+
+    printf("Enter vehicle type (1=Van,2=Truck,3=Lorry): ");
+    scanf("%d", &vType);
+    printf("Enter weight (kg): ");
+    scanf("%lf", &w);
+
+    double D = distance[from - 1][to - 1];
+    if (D <= 0) {
+        printf("Distance not set between these cities.\n");
+        return;
+    }
+
+
+
 
 
