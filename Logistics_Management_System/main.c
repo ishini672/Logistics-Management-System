@@ -116,6 +116,7 @@ void enterDistance() {
 
     showCities();
 
+    int a,b;
     int d;
     printf("Enter first city number: ");
     scanf("%d", &a);
