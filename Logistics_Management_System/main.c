@@ -258,6 +258,18 @@ void performanceReport() {
     }
 
 
+    printf("\n===== PERFORMANCE REPORT =====\n");
+    printf("Total Deliveries Completed: %d\n", deliveryCount);
+    printf("Total Distance Covered: %.2f km\n", totalDist);
+    printf("Average Delivery Time: %.2f hrs\n", totalTime / deliveryCount);
+    printf("Total Revenue: %.2f LKR\n", totalRevenue);
+    printf("Total Profit: %.2f LKR\n", totalProfit);
+    printf("Shortest Route: %.2f km\n", minDist);
+    printf("Longest Route: %.2f km\n", maxDist);
+}
+
+
+
 
 
 
