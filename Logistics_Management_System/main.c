@@ -239,6 +239,26 @@ void newDelivery() {
 }
 
 
+void performanceReport() {
+    if (deliveryCount == 0) {
+        printf("No deliveries yet.\n");
+        return;
+    }
+
+    double totalDist = 0, totalProfit = 0, totalRevenue = 0, totalTime = 0;
+    double minDist = dist[0], maxDist = dist[0];
+
+    for (int i = 0; i < deliveryCount; i++) {
+        totalDist += dist[i];
+        totalProfit += profit[i];
+        totalRevenue += customerCharge[i];
+        totalTime += timeHrs[i];
+        if (dist[i] < minDist) minDist = dist[i];
+        if (dist[i] > maxDist) maxDist = dist[i];
+    }
+
+
+
 
 
 
