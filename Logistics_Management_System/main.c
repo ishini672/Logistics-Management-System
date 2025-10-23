@@ -62,10 +62,12 @@ int main()
             newDelivery();
         else if (choice == 6)
             performanceReport();
+        else if (choice == 7)
+             printf("\nThank you for using the Delivery Cost Estimation System!\n");
         else printf("Invalid choice!\n");
     }
 
-    printf("\nThank you for using the Delivery Cost Estimation System!\n");
+
 
     return 0;
 
